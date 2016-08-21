@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userIcon"
+        android:background="@drawable/user_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreImg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/userIcon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTxt"
+        android:textColor="#000000"
+        android:text="아이디"
+        android:layout_toRightOf="@+id/phoneIcon"
+        android:layout_alignLeft="@+id/scoreImg"
+        android:layout_below="@+id/scoreImg"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enrollTimeTxt"
+        android:layout_toRightOf="@+id/idTxt"
+        android:layout_alignBottom="@+id/idTxt"
+        android:layout_marginLeft="10dp"
+        android:text="시간"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentTxt"
+        android:layout_alignLeft="@+id/idTxt"
+        android:layout_below="@+id/idTxt"
+        android:text="리뷰 내용"
+        />
+
+
+</RelativeLayout>

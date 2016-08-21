@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/centerImg"
+        android:layout_margin="10dp"/>
+
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/reviewIcon"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/scoreTxt"
+        android:layout_alignBottom="@+id/scoreTxt"
+        android:background="@drawable/review_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvReviewCnt"
+        android:text="리뷰갯수"
+        android:layout_toRightOf="@+id/reviewIcon"
+        android:layout_alignBottom="@+id/reviewIcon"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/workTitleTxt1"
+        android:textSize="9dp"
+        android:layout_toRightOf="@+id/centerImg"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/addressTxt"
+        android:background="@layout/box"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/workTitleTxt2"
+        android:textSize="9dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/workTitleTxt1"
+        android:layout_toRightOf="@+id/workTitleTxt1"
+        android:background="@layout/box"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/workTitleTxt3"
+        android:textSize="9dp"
+        android:layout_alignBottom="@+id/workTitleTxt2"
+        android:layout_toRightOf="@+id/workTitleTxt2"
+        android:layout_marginRight="5dp"
+        android:background="@layout/box"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:background="@layout/box"
+        android:id="@+id/workTitleTxt4"
+        android:textSize="9dp"
+        android:layout_alignBottom="@+id/workTitleTxt3"
+        android:layout_toRightOf="@+id/workTitleTxt3"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/centerTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/centerImg"
+        android:text="혼다코리아모터사이클-부산금정점"
+        android:layout_marginTop="5dp"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/centerTitleTxt"
+        android:layout_alignLeft="@+id/centerTitleTxt"
+        android:paddingBottom="3dp"
+        android:id="@+id/scoreImg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreTxt"
+        android:layout_alignBottom="@+id/scoreImg"
+        android:layout_toRightOf="@+id/scoreImg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주소"
+        android:id="@+id/addressTxt"
+        android:layout_alignLeft="@id/centerTitleTxt"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/scoreImg"
+        android:textColor="#BDBDBD"
+        android:textSize="13sp"/>
+
+</RelativeLayout>

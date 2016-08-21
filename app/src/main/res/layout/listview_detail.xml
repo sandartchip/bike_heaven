@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1C57B1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가게이름"
+        android:id="@+id/centerName"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="#1C57B1"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_alignParentBottom="true">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/centerImg"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/workTitleTxt1"
+        android:textSize="9dp"
+        android:layout_toRightOf="@+id/centerImg"
+        android:layout_margin="10dp"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:background="@layout/box"
+        android:visibility="gone"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/workTitleTxt2"
+        android:textSize="9dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/workTitleTxt1"
+        android:layout_toRightOf="@+id/workTitleTxt1"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:visibility="gone"
+        android:background="@layout/box"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/workTitleTxt3"
+        android:textSize="9dp"
+        android:layout_alignBottom="@+id/workTitleTxt2"
+        android:layout_toRightOf="@+id/workTitleTxt2"
+        android:layout_marginRight="5dp"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:visibility="gone"
+        android:background="@layout/box"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:background="@layout/box"
+        android:id="@+id/workTitleTxt4"
+        android:textSize="9dp"
+        android:layout_marginLeft="2dp"
+        android:layout_alignBottom="@+id/workTitleTxt3"
+        android:layout_toRightOf="@+id/workTitleTxt3"
+        android:paddingRight="2dp"
+        android:paddingLeft="2dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/mainWork"
+        android:text="주요업무 : "
+        android:layout_marginBottom="17dp"
+        android:layout_toRightOf="@+id/centerImg"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainWorkTxt"
+        android:text="주요업무 예시"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/mainWork"
+        android:layout_alignTop="@+id/mainWork"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workKind"
+        android:text="취급종류 : "
+        android:layout_alignLeft="@id/mainWork"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/mainWork"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workKindTxt"
+        android:text="취급종류 예시"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/workKind"
+        android:layout_alignTop="@+id/workKind"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:text="주소 : "
+        android:layout_alignLeft="@id/mainWork"
+        android:layout_below="@id/workKind"
+        android:layout_marginBottom="15dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTxt"
+        android:text="주소 예시"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/address"
+        android:layout_alignTop="@+id/address"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/payment"
+        android:text="결제 : "
+        android:layout_alignLeft="@id/mainWork"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/address"></TextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentTxt"
+        android:text="결제종류 예시"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/payment"
+        android:layout_alignTop="@+id/payment"></TextView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_line1"
+        android:layout_alignLeft="@id/mainWork"
+        android:layout_below="@+id/payment"
+        android:background="@drawable/detail_line1"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/watch_icon"
+        android:layout_alignLeft="@id/mainWork"
+        android:layout_below="@id/detail_line1"
+        android:background="@drawable/icon_watch"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workingTime"
+        android:text="영업시간 : "
+        android:layout_toRightOf="@id/watch_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/detail_line1"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workingTimeTxt"
+        android:text="영업시간 글자"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/workingTime"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/workingTime"></TextView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneIcon"
+        android:layout_alignLeft="@id/mainWork"
+        android:layout_below="@id/watch_icon"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/telephone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneTxt"
+        android:textColor="#000000"
+        android:text="전화기 글자"
+        android:layout_toRightOf="@+id/phoneIcon"
+        android:layout_alignTop="@+id/phoneIcon"
+        android:layout_marginLeft="10dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneDetailTxt"
+        android:text="050번은 바이크헤븐에서 제공하는 번호입니다."
+        android:layout_below="@+id/phoneTxt"
+        android:layout_alignLeft="@+id/phoneTxt"
+        android:textColor="#999999"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_line2"
+        android:layout_below="@+id/phoneDetailTxt"
+        android:background="@drawable/detail_line2"/>
+
+    <ImageView
+        android:id="@+id/scoreImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/detail_line2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoreTxt"
+        android:layout_alignBottom="@+id/scoreImg"
+        android:layout_toRightOf="@+id/scoreImg"
+        android:textColor="#999999"></TextView>
+
+
+<TabHost
+android:id="@+id/tabhost"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/detail_line2"
+    android:layout_alignParentBottom="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TabWidget>
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <ScrollView
+            android:id="@+id/tab1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tab1textView"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test12"/>
+
+            </TableRow>
+
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewListview">
+            </ListView>
+        </ScrollView>
+
+    </FrameLayout>
+</LinearLayout>
+</TabHost>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화걸기"
+        android:id="@+id/PhoneButton"
+        android:layout_gravity="bottom"
+        android:textColor="#ffffff"
+        android:background="#5024e1"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

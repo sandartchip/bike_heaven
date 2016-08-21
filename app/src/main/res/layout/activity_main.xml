@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.shale.gpx_jxl_2.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/topImg"
+        android:background="@drawable/top_img"
+        android:layout_alignParentTop ="true"
+        android:layout_margin="0dp">
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AppTitle"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="15dp"
+        android:text="바이크헤븐"
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:id="@+id/findEditTxt"
+
+        android:visibility="invisible"
+        android:padding="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="100dp"
+        android:hint="수리점 이름 검색"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:background="#1C57B1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUnderline"
+        android:visibility="gone"
+        android:background="@drawable/edittxt_underline"
+        android:layout_alignLeft="@+id/findEditTxt"
+        android:layout_alignBottom ="@+id/findEditTxt">
+    </ImageView>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:background="#1C57B1"
+        android:id="@+id/editTextDisappearBtn"
+        android:layout_alignBottom="@+id/findEditTxt"
+        android:layout_alignRight="@+id/findEditTxt" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gpsImg"
+        android:background="@drawable/gps"
+
+        android:layout_alignLeft   = "@+id/topImg"
+        android:layout_alignBottom = "@+id/topImg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="8dp">
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationText"
+
+        android:layout_toRightOf="@+id/gpsImg"
+        android:layout_alignBottom="@+id/gpsImg"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal"></TextView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar1"
+        android:layout_alignParentLeft="true"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/findImgBtn"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/icon_search"
+     />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"
+        android:layout_below="@+id/topImg"
+        android:layout_marginBottom="30dp">
+    </ListView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="425dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <RadioGroup
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rdGroup"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#FEFEFE"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="별점 순" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="거리 순 " />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="리뷰 많은 순" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sortBtn"
+        android:text="정렬"
+
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/sort_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="535dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="305dp"
+        android:orientation="vertical" >
+
+
+        <RadioGroup
+            android:layout_width="165dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rdGroup2"
+            android:visibility="gone"
+            android:background="#ffffff">
+
+            <RadioButton
+                android:id="@+id/option4"
+                android:typeface="sans"
+                android:layout_width="150dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:text="공식서비스센터" />
+
+            <RadioButton
+                android:id="@+id/option5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="출장수리" />
+
+            <RadioButton
+                android:id="@+id/option6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="스쿠터전문" />
+
+            <RadioButton
+                android:id="@+id/option7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보험처리"
+                android:padding="10dp"                />
+
+            <RadioButton
+                android:id="@+id/option8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="튜닝" />
+
+            <RadioButton
+                android:id="@+id/option9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="정비" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/workKindBtn"
+        android:text="업무종류"
+        android:background="@drawable/workkind_icon"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="535dp"/>
+
+
+    <ImageButton
+        android:layout_width="10dp"
+        android:background="@drawable/icon_uparrow"
+        android:layout_height="10dp"
+        android:id="@+id/upArrowWorkKind"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="544dp"/>
+
+    <ImageButton
+        android:layout_width="10dp"
+        android:background="@drawable/icon_uparrow"
+        android:layout_height="10dp"
+        android:id="@+id/upArrowSort"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="544dp"/>
+
+
+    <ImageButton
+        android:layout_width="10dp"
+        android:background="@drawable/icon_downarrow"
+        android:layout_height="10dp"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/downArrowWorkKind"
+        android:visibility="gone"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="544dp"/>
+
+    <ImageButton
+        android:layout_width="10dp"
+        android:background="@drawable/icon_downarrow"
+        android:layout_height="10dp"
+        android:layout_marginBottom="1dp"
+        android:visibility="gone"
+        android:id="@+id/downArrowSort"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="544dp"/>
+</RelativeLayout>
+
